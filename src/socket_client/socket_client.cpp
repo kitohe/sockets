@@ -84,7 +84,7 @@ int main()
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
 
-    result = getaddrinfo("1.0.0.1", "80", &hints, &addr_result);
+    result = getaddrinfo("127.0.0.1", PORT, &hints, &addr_result);
 
     if (result != 0)
     {
